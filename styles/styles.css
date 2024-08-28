@@ -1,19 +1,19 @@
 /* Shared Section */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
+:root {
 
     /* center alignment */
     --margin-centered: 0 auto;
-    
+
     /* colors */
     --primary-color: #E6533C;
     --primary-black: #111111;
     --primary-white: #FFFFFF;
-    
+
     /* font weights */
     --font-normal: 400;
-    --font-extra-bold: 800; 
+    --font-extra-bold: 800;
 }
 
 * {
@@ -30,7 +30,6 @@ html {
 body {
     height: 100%;
     width: 100%;
-    /* max-width: 1440px; */
     margin: var(--margin-centered);
     color: var(--primary-white);
 
@@ -40,41 +39,43 @@ body {
     font-style: normal;
 }
 
-.display-flex{
+.display-flex {
     display: flex;
 }
 
+
+
 /* header section */
-header{
+header {
     width: 100%;
     background-color: gray;
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
 }
 
-.brand{
+.brand {
     color: var(--primary-color);
     font-weight: var(--font-extra-bold);
     font-style: italic;
     font-size: 2.25rem;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: var(--primary-white);
     font-size: 1.125rem;
 }
 
-.navbar{
+.navbar {
     justify-content: space-between;
     padding-top: 50px;
     align-items: center;
 }
 
-.nav-links{
+.nav-links {
     gap: 47px;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -82,14 +83,38 @@ header{
     padding: 4px 12px;
 }
 
-#nav-home{
+#nav-home {
     background-color: var(--primary-color);
     padding: 8px 20px;
     border-radius: 46px;
 }
 
-.nav-container{
+.nav-container {
     margin: var(--margin-centered);
     width: 80%;
     max-width: 1152px;
+}
+
+.hamburger-icon{
+    width: 32px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+.hamburger-icon-container{
+    display: none;
+}
+
+
+
+/* header section responsive */
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger-icon-container{
+        display: block;
+    }
 }
