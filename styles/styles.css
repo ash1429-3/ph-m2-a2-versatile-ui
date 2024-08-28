@@ -13,6 +13,7 @@
 
     /* font weights */
     --font-normal: 400;
+    --font-semi-bold: 600;
     --font-extra-bold: 800;
 }
 
@@ -80,13 +81,14 @@ header {
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
-    padding: 4px 12px;
+    padding: 4px 12px 4px 4px;
 }
 
 #nav-home {
     background-color: var(--primary-color);
     padding: 8px 20px;
     border-radius: 46px;
+    font-weight: var(--font-semi-bold);
 }
 
 .nav-container {
