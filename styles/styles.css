@@ -267,4 +267,32 @@ header {
     .hamburger-icon-container {
         display: block;
     }
+
+    .nav-container,
+    .banner {
+        /* margin: var(--margin-centered); */
+        width: 90%;
+        /* max-width: 1152px; */
+    }
+
+    .banner {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    .banner-content{
+        width: 90%;
+        align-self: flex-start;
+    }
+
+    .tutorial-badge{
+        bottom: 450px;
+        left: 191px;
+    }
+
+    .workout-badge{
+        bottom: 245px;
+        right: 190px;
+    }
+
+
 }
