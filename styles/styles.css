@@ -68,12 +68,28 @@ body {
     border: 1px solid var(--primary-color);
 }
 
+.section-title{
+    font-size: 2.2rem;
+    font-weight: var(--font-extra-bold);
+    line-height: 120%;
+    text-align: center;
+}
+
+.section-text{
+    color: var(--black-shade50);
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+/* Shared Section ends*/
 
 
 /* header section */
 header {
     width: 100%;
-    background: linear-gradient(180.2deg, #434343 -81.9%, black 100%);
+    background: linear-gradient(180.2deg, #434343 -81.9%, #111111 100%);
 }
 
 .brand {
@@ -115,7 +131,8 @@ header {
 }
 
 .nav-container,
-.banner {
+.banner,
+main {
     margin: var(--margin-centered);
     width: 80%;
     max-width: 1152px;
@@ -295,4 +312,45 @@ header {
     }
 
 
+}
+
+/* header section ends*/
+
+
+/* change habit section */
+
+.change-habit{
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 80px;
+}
+
+.habit-collage{
+    margin-top: 44px;
+    justify-content: space-between;
+}
+
+.collage-content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.collage-img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.collage-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: var(--font-semi-bold);
+    line-height: 120%;
+    text-align: center;
+    margin: 26px 0px 6px 0px;
+}
+.collage-text{
+    line-height: 18px;
 }
